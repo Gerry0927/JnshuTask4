@@ -51,42 +51,18 @@
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
-        <table schema="" tableName="article" domainObjectName="Article"
+        <table schema="" tableName="profession" domainObjectName="Profession"
                enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false" selectByExampleQueryId="false">
             <!--是否使用实际列名,默认为false-->
             <!--<property name="useActualColumnNames" value="false" />-->
         </table>
-        <table schema="" tableName="author" domainObjectName="Author"
+        <table schema="" tableName="execllent_student" domainObjectName="ExcellentStudent"
                enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false" selectByExampleQueryId="false">
             <!--是否使用实际列名,默认为false-->
             <!--<property name="useActualColumnNames" value="false" />-->
             <!-- 配置主键生成策略 -->
-        </table>
-        <table schema="" tableName="banner" domainObjectName="BannerInfo"
-               enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
-               enableUpdateByExample="false" selectByExampleQueryId="false">
-            <!--是否使用实际列名,默认为false-->
-            <!--<property name="useActualColumnNames" value="false" />-->
-        </table>
-        <table schema="" tableName="category" domainObjectName="CategoryInfo"
-               enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
-               enableUpdateByExample="false" selectByExampleQueryId="false">
-            <!--是否使用实际列名,默认为false-->
-            <!--<property name="useActualColumnNames" value="false" />-->
-        </table>
-        <table schema="" tableName="comment" domainObjectName="Comment"
-               enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
-               enableUpdateByExample="false" selectByExampleQueryId="false">
-            <!--是否使用实际列名,默认为false-->
-            <!--<property name="useActualColumnNames" value="false" />-->
-        </table>
-        <table schema="" tableName="reply" domainObjectName="Reply"
-               enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
-               enableUpdateByExample="false" selectByExampleQueryId="false">
-            <!--是否使用实际列名,默认为false-->
-            <!--<property name="useActualColumnNames" value="false" />-->
         </table>
     </context>
 </generatorConfiguration>
