@@ -13,6 +13,11 @@ import java.util.List;
 public class StudentServiceImpl implements StudentService {
     @Resource
     private StudentMapper studentMapper;
+
+    public Student queryStudentInfoById(long id) throws Exception {
+        return studentMapper.queryInfoById(id);
+    }
+
     @Override
     public PageInfo<Student> getStudentList(int pageNum, int pageSize) {
         PageHelper.startPage(pageNum,pageSize);

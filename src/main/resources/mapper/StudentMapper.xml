@@ -18,7 +18,7 @@
         <include refid="base_column"/>
         FROM student ORDER BY id DESC
     </select>
-    <select id="queryStudentById" parameterType="long" resultType="com.gerry.jnshu.pojo.Student">
+    <select id="queryInfoById" parameterType="long" resultType="com.gerry.jnshu.pojo.Student">
         SELECT * FROM student WHERE id = #{id}
     </select>
     <select id="queryStudentByName" parameterType="java.lang.String" resultType="com.gerry.jnshu.pojo.Student">

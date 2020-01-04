@@ -244,7 +244,18 @@
       <artifactId>tiles-jsp</artifactId>
       <version>3.0.7</version>
     </dependency>
-
+    <!--Hex 加密-->
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.9</version>
+    </dependency>
+    <!--DBCP-->
+    <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>1.2.2</version>
+    </dependency>
 
   </dependencies>
 
