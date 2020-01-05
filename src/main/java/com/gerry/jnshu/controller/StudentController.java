@@ -27,19 +27,17 @@ public class StudentController {
     @Resource
     private ExcellentStudentService excellentStudentService;
 
-    @RequestMapping("/list")
+    @RequestMapping("/u/list")
     public String list(@RequestParam(required = false,defaultValue = "1") Integer pageNum,@RequestParam(required = false,defaultValue = "10") Integer pageSize,HashMap<String,Object> map){
         PageInfo<Student> ps = studentService.getStudentList(pageNum,pageSize);
         map.put("stuInfos",ps.getList());
         return "list";
     }
 
-    @RequestMapping("/toTask2")
+    @RequestMapping("/u/toTask2")
     public String toMainPage(Map<String, Object> map) throws Exception {
-
         List<String>  proTypes = excellentStudentService.getProTypes();
         map.put("proTypes", proTypes);
-
         Map<String,List<Profession>> proInfos = new HashMap<>();
         for (String type : proTypes) {
             proInfos.put(type,excellentStudentService.getProInfos(type));
@@ -48,7 +46,7 @@ public class StudentController {
         return "views/task9-2";
     }
 //
-    @RequestMapping("/toTask1")
+    @RequestMapping("toTask1")
     public String toTask2(Map<String, Object> map) throws Exception {
         List<ExcellentStudent>  proInfos = excellentStudentService.getExcellentStuInfos();
         map.put("excellentStuInfos", proInfos);

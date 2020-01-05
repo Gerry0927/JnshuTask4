@@ -73,7 +73,7 @@
             success: function (data) {
 //                data = eval("(" + data + ")");
                 if (data.code == '0') {
-                    window.location.href = "${pageContext.request.contextPath}/student/list";
+                    window.location.href = "${pageContext.request.contextPath}/u/student/list";
                 } else {
                     myAlert(data.message);
                 }

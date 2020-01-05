@@ -62,4 +62,17 @@
     <!--开启 AspectJ 支持-->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
 
+    <!-- 配置拦截器 -->
+    <mvc:interceptors>
+        <!-- 多个拦截器，按顺序执行 -->
+        <mvc:interceptor>
+            <!--<mvc:mapping path="/**"/> &lt;!&ndash; 拦截所有的url包括子url路径 &ndash;&gt;-->
+            <mvc:mapping path="/student/u/**"/> <!-- 拦截所有的url包括子url路径 -->
+            <bean class="com.gerry.jnshu.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+        <!-- 其他拦截器 -->
+    </mvc:interceptors>
+
+
+
 </beans>

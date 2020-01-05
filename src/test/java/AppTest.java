@@ -10,6 +10,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 import java.beans.PropertyEditor;
+import java.io.UnsupportedEncodingException;
+import java.util.Base64;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)

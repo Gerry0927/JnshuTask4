@@ -10,6 +10,8 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
+import java.util.Base64;
 
 public class LoginInterceptor extends HandlerInterceptorAdapter {
 
@@ -18,7 +20,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         String url = httpServletRequest.getRequestURI();
-        if (url.contains("/u")) {
+        if (url.contains("/student/u")) {
             if (httpServletRequest.getSession().getAttribute("student") != null) {
                 return true;
             } else {
@@ -49,4 +51,8 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
 
     }
+
+
+
+
 }

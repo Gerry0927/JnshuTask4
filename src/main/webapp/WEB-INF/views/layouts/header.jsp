@@ -51,8 +51,8 @@
                         </div>
                         <div class="collapse navbar-collapse" id="example-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="toTask1">首页</a></li>
-                                <li><a href="toTask2">职业</a></li>
+                                <li><a href="u/toTask1">首页</a></li>
+                                <li><a href="u/toTask2">职业</a></li>
                                 <li><a href="toTask3">推荐</a></li>
                                 <li><a href="#">关于</a></li>
                             </ul>
